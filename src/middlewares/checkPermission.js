@@ -4,7 +4,8 @@ const logger = require('../utils/logger')
 const { authServices } = require('../services')
 
 module.exports = permission => (req, res, next) => {
-    const { token } = req.body
+    const {token}= req.headers
+
 
     if (!token) {
         logger.error('Token is required to access this resource')
@@ -12,7 +13,7 @@ module.exports = permission => (req, res, next) => {
     } else {
         const { role, userId } = authServices.verifyAuthToken(token)
 
-        if (role !== permission) {
+        if (permission.indexOf(role) == -1) {
             logger.error(`User ${userId} tried to access a resource without permission`)
             next(new Api400Error('You do not have permission to access this resource'))
         } else {

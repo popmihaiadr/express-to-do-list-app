@@ -9,12 +9,12 @@ const router = express.Router();
 router
     .route('/tasks')
     .post(checkPermissions('WRITER'),validator(taskValidator.addTask), taskControllers.addTask)
-    .get(taskControllers.getAllTasks)
+    .get(checkPermissions(['READER','WRITER']),taskControllers.getAllTasks)
 
     router
     .route('/tasks/:id')
     .put(checkPermissions('WRITER'),validator(taskValidator.updateTask), taskControllers.updateTask)
      .put(checkPermissions('WRITER') , taskControllers.updateTask)
     .delete(checkPermissions('WRITER'),taskControllers.deleteTask)
-    .get(taskControllers.getTaskById)
+    .get(checkPermissions(['READER','WRITER']),taskControllers.getTaskById)
 module.exports = router;

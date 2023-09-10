@@ -851,3 +851,92 @@
 {"isOperational":true,"level":"error","statusCode":400}
 {"isOperational":true,"level":"error","statusCode":400}
 {"level":"info","message":"Task 3 succesully updated!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Token is required to access this resource"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Token is required to access this resource"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"error","message":"Token is required to access this resource"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"error","message":"Token is required to access this resource"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Token is required to access this resource"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"error","message":"Token is required to access this resource"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Token is required to access this resource"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Token is required to access this resource"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Token is required to access this resource"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Token is required to access this resource"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"User undefined tried to access a resource without permission"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"error","message":"User undefined tried to access a resource without permission"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"User mihai logged in!"}
+{"level":"error","message":"User undefined tried to access a resource without permission"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"User mihai logged in!"}
+{"level":"info","message":"User mihai logged in!"}
+{"level":"error","message":"User undefined tried to access a resource without permission"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"error","message":"User undefined tried to access a resource without permission"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"User undefined tried to access a resource without permission"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"User undefined tried to access a resource without permission"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Token is required to access this resource"}
+{"isOperational":true,"level":"error","statusCode":400}
