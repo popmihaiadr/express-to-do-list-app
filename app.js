@@ -5,7 +5,6 @@ const swaggerUi = require('swagger-ui-express')
 const apiDoc = require('./docs/apidoc')
 
 const {
-    userRoutes,
     authRoutes,
     taskRoutes,
 } = require('./src/routes')
@@ -19,7 +18,6 @@ const app = express()
 
 app.use(bodyParser.json())
 
-app.use(userRoutes)
 app.use(authRoutes)
 app.use(taskRoutes)
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(apiDoc))
