@@ -8,6 +8,14 @@ const addTask = Joi.object({
     token:Joi.string().required()
 })
 
+const updateTask = Joi.object({
+    title: Joi.string().required(),
+    description: Joi.string().required(),
+    status: Joi.string().valid('PENDING', 'COMPLETED').required(),
+    token:Joi.string().required()
+})
+
+
 module.exports = {
-    addTask
+    addTask,updateTask
 }

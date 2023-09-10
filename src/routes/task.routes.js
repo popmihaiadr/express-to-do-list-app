@@ -13,6 +13,8 @@ router
 
     router
     .route('/tasks/:id')
-    // .post(checkPermissions('WRITER'),validator(taskValidator.addTask), taskControllers.addTask)
+    .put(checkPermissions('WRITER'),validator(taskValidator.updateTask), taskControllers.updateTask)
+     .put(checkPermissions('WRITER') , taskControllers.updateTask)
+    .delete(checkPermissions('WRITER'),taskControllers.deleteTask)
     .get(taskControllers.getTaskById)
 module.exports = router;

@@ -25,6 +25,26 @@ const getTaskById = async (id) => {
     }
 }
 
+const deleteTask = async (id) => {
+    try {
+        const task = await tasksDb.findById(id);
+        if (!task) {
+            logger.error(`Task with id ${id} not found`)
+            throw new BaseError('Task not found')
+        } else 
+        {
+           const countRecordForId= await tasksDb.deleteOne(id);
+           return {
+           countRecordForId 
+         }
+
+        }
+    } catch(error) {
+        logger.error(error)
+        throw new Api500Error(`Failed deleting task by id: ${id}`)
+    }
+}
+
 const checkDuplicateID = async (id) => {
     try {
         const task = await tasksDb.findById(id)
@@ -41,9 +61,10 @@ const createTask = async (taskData) => {
     try {
         await checkDuplicateID(taskData.id)
         const task = await tasksDb.insertTask(taskData)
-        const { id, description, status } = task
+        const { id,title, description, status } = task
         return {
            id,
+           title,
            description,
             status, 
         }
@@ -52,7 +73,22 @@ const createTask = async (taskData) => {
         throw new Api500Error(error.message)
     }
 }
-
+const updateTask = async (taskId,taskData) => {
+    try {
+        
+        const task = await tasksDb.findOneAndUpdate(taskId, taskData);
+        const { id, title, description, status } = task
+        return {
+           id,
+           title,
+           description,
+        status, 
+        }
+    } catch(error) {
+        logger.error(error)
+        throw new Api500Error(error.message)
+    }
+}
 module.exports = {
-     createTask, getAllTasks, getTaskById
+     createTask, getAllTasks, getTaskById, updateTask, deleteTask
 }

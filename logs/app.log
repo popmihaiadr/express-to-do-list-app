@@ -707,3 +707,147 @@
 {"level":"info","message":"Server is running on port 8080"}
 {"level":"info","message":"MongoDB Connected!"}
 {"date":"Sun Sep 10 2023 19:14:31 GMT+0300 (Eastern European Summer Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\src\\routes\\index.js","C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\app.js","C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\server.js"]},"exception":true,"level":"error","message":"uncaughtException: Cannot find module './user.routes'\nRequire stack:\n- C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\src\\routes\\index.js\n- C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\app.js\n- C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\server.js\nError: Cannot find module './user.routes'\nRequire stack:\n- C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\src\\routes\\index.js\n- C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\app.js\n- C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)\n    at Module._load (node:internal/modules/cjs/loader:920:27)\n    at Module.require (node:internal/modules/cjs/loader:1141:19)\n    at require (node:internal/modules/cjs/helpers:110:18)\n    at Object.<anonymous> (C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\src\\routes\\index.js:1:20)\n    at Module._compile (node:internal/modules/cjs/loader:1254:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)\n    at Module.load (node:internal/modules/cjs/loader:1117:32)\n    at Module._load (node:internal/modules/cjs/loader:958:12)\n    at Module.require (node:internal/modules/cjs/loader:1141:19)","os":{"loadavg":[0,0,0],"uptime":337907.843},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\server.js"],"cwd":"C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18660411,"external":19586382,"heapTotal":37154816,"heapUsed":24788688,"rss":72667136},"pid":16488,"uid":null,"version":"v18.15.0"},"stack":"Error: Cannot find module './user.routes'\nRequire stack:\n- C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\src\\routes\\index.js\n- C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\app.js\n- C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)\n    at Module._load (node:internal/modules/cjs/loader:920:27)\n    at Module.require (node:internal/modules/cjs/loader:1141:19)\n    at require (node:internal/modules/cjs/helpers:110:18)\n    at Object.<anonymous> (C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\src\\routes\\index.js:1:20)\n    at Module._compile (node:internal/modules/cjs/loader:1254:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)\n    at Module.load (node:internal/modules/cjs/loader:1117:32)\n    at Module._load (node:internal/modules/cjs/loader:958:12)\n    at Module.require (node:internal/modules/cjs/loader:1141:19)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1075,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":920,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1141,"method":"require","native":false},{"column":18,"file":"node:internal/modules/cjs/helpers","function":"require","line":110,"method":null,"native":false},{"column":20,"file":"C:\\Users\\popmi\\Desktop\\Trainings\\express-to-do-list-app\\src\\routes\\index.js","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1254,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1308,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1117,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":958,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1141,"method":"require","native":false}]}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Task with id 3 not found"}
+{"isOperational":true,"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"expiredAt":"2023-09-10T15:54:38.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError"}
+{"level":"info","message":"User mihai logged in!"}
+{"level":"error"}
+{"body":"\r\n    \"title\":\"Updates Task\",\r\n    \"description\":\"12345678a\",\r\n    \"status\":\"Completed\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjY0ZmRjNmM5ZWMxMWQ1M2QxZmYzNTkzMSIsInJvbGUiOiJXUklURVIiLCJpYXQiOjE2OTQzNjM1MjUsImV4cCI6MTY5NDM2NzEyNX0._GdusQ8vmbNDQQGyqUiwNnFXhSWn9DpOpFB88yMreZI\"\r\n}\r\n","expose":true,"level":"error","status":400,"statusCode":400,"type":"entity.parse.failed"}
+{"level":"error"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Task 1 succesully updated!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Task 1 succesully updated!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Task undefined succesully deleted!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Task with id 1 not found"}
+{"isOperational":true,"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Task undefined succesully deleted!"}
+{"level":"error","message":"Task with id 2 not found"}
+{"isOperational":true,"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"error","message":"Task with id 2 not found"}
+{"isOperational":true,"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"error","message":"Task with id 2 not found"}
+{"isOperational":true,"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"error","message":"Task with id 2 not found"}
+{"isOperational":true,"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"error","message":"Task with id 2 not found"}
+{"isOperational":true,"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Task with id 2 not found"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"error","message":"Task with id 2 not found"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"isOperational":true,"level":"error","statusCode":500}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Failed checking forID. Error: ID already in use"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Task 3 created!"}
+{"level":"info","message":"Task undefined succesully deleted!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Task undefined succesully deleted!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Task with id 3 not found"}
+{"isOperational":true,"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Task undefined succesully deleted!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Task 3 created!"}
+{"level":"error"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Task with id 3 not found"}
+{"isOperational":true,"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Task 3 created!"}
+{"level":"error"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"info","message":"Task 3 created!"}
+{"level":"info","message":"Task 3 succesully deleted!"}
+{"level":"info","message":"Server is running on port 8080"}
+{"level":"info","message":"MongoDB Connected!"}
+{"level":"error","message":"Task with id 3 not found"}
+{"isOperational":true,"level":"error"}
+{"isOperational":true,"level":"error","statusCode":500}
+{"level":"info","message":"Task 3 created!"}
+{"isOperational":true,"level":"error","statusCode":400}
+{"isOperational":true,"level":"error","statusCode":400}
+{"level":"info","message":"Task 3 succesully updated!"}

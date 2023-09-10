@@ -29,7 +29,33 @@ const getAllTasks = handleAsync(async (req, res, next) => {
     
 }) 
 
+const updateTask = handleAsync(async (req, res, next) => {
+    //to-do use autoincrement and avoid requesting the id in the body
+    const {
+       title, 
+       description,
+       status
+    } = req.body
+    const taskId = req.params.id;
+    const task= await taskServices.updateTask(taskId,{
+        title, 
+        description,
+        status
+    })
 
+    logger.info(`Task ${task.id} succesully updated!`)
+    res.status(200).send(task)
+}) 
+
+const deleteTask = handleAsync(async (req, res, next) => {
+
+  
+    const taskId = req.params.id;
+    const records= (await taskServices.deleteTask (taskId)).countRecordForId;
+
+    logger.info(`Task ${taskId} succesully deleted!`)
+    res.status(200).send(' Number of records in db for id: '+ taskId + ' is ' + records)
+}) 
 const getTaskById = handleAsync(async (req, res, next) => {
     const taskId = req.params.id;
     const result = JSON.stringify(await taskServices.getTaskById(taskId))
@@ -38,5 +64,5 @@ const getTaskById = handleAsync(async (req, res, next) => {
 }) 
 
 module.exports = {
-    addTask, getTaskById, getAllTasks
+    addTask, getTaskById, getAllTasks,deleteTask,updateTask
 }
