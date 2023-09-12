@@ -54,7 +54,7 @@ const deleteTask = handleAsync(async (req, res, next) => {
     const records= (await taskServices.deleteTask (taskId)).countRecordForId;
 
     logger.info(`Task ${taskId} succesully deleted!`)
-    res.status(200).send(' Number of records in db for id: '+ taskId + ' is ' + records)
+    res.status(204).send(' Number of records in db for id: '+ taskId + ' is ' + records)
 }) 
 const getTaskById = handleAsync(async (req, res, next) => {
     const taskId = req.params.id;
