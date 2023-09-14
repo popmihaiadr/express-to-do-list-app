@@ -15,6 +15,7 @@ const getAllUsers = async () => {
 const getUserByEmail = async (email) => {
     try {
         const user = await userDb.findByEmail(email)
+        console.log(user);
         if (!user) {
             logger.error(`User with email ${email} not found`)
             throw new BaseError('User not found')

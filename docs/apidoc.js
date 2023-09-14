@@ -309,10 +309,10 @@ const apiDocumentation = {
             },
         },
         securitySchemes: {
-            tokenAuth: { // Define a new security scheme called "tokenAuth"
+            tokenAuth: { 
                 type: 'apiKey',
-                in: 'header', // Specify that the authentication key is in the header
-                name: 'token', // Specify the name of your custom header field
+                in: 'header', 
+                name: 'token', 
             },
         },
     },

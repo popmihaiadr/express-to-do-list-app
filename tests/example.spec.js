@@ -1,116 +1,49 @@
-/* 
-  ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ Defaults testing structure                                                                                      │
-  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
- */
+const expect = require('chai').expect
+const request = require('supertest')
+const sandbox = require('sinon').createSandbox()
+const rewire = require('rewire')
+let app = require('../app')
+const { generateAuthToken } = require('../src/services/auth.services');
 
-// const expect = require('chai').expect
+describe('Get task endpoint', () => {
+  let sampleResponse;
+  let validToken;
 
-// describe('Test demo', () => {
-//     beforeEach('beforeEach', () => {
-//         console.log('Run before each test case')
-//     })
-//     before('before', () => {
-//         console.log('Run before all the test suites')
-//     })
-//     it('should return 200', () => {
-//         expect(200).to.equal(200)
-//     })
-//     after('after', () => {
-//         console.log('Run after all the test suites')
-//     })
-//     it('should return 200', () => {
-//         expect(200).to.equal(200)
-//     })
-//     afterEach('afterEach', () => {
-//         console.log('Run after each test case')
-//     })
-// })
+  beforeEach(async () => {
+    sampleResponse = [
+      {
+        "_id": "65031e0a22c767e38e714457", 
+        "id": 1,
+        "title": "3rd Add after delete",
+        "description": "12345678a",
+        "status": "COMPLETED",
+        "__v": 0
+      }
+    ];
 
-/* 
-  ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ Mocking functions                                                                                               │
-  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
- */
+    validToken = await generateAuthToken('65009fa55f663e773b560353', 'WRITER');
+  });
 
-// const expect = require('chai').expect
-// const sandbox = require('sinon').createSandbox()
-// const rewire = require('rewire')
-// const mongoose = require('mongoose')
-// let { userServices } = require('../src/services')
+  afterEach(() => {
+    app = rewire('../app');
+    sandbox.restore();
+  });
 
-// describe('Test user service', () => {
-//     let sampleUsers
-//     let findStub
+  describe('GET /tasks', () => {
+    it('should fail if no token is sent', async () => {
+      await request(app)
+        .get('/tasks')
+        .expect(500);
+    });
 
-//     beforeEach(() => {
-//         sampleUsers = [
-//             {
-//                 _id: 1,
-//                 name: 'John Doe',
-//                 email: 'email@email.com',
-//                 token: 'kasdhkajsd',
-//                 salt: 'asdanscbna',
-//                 role: 'ADMIN'
-//             }
-//         ]
-//         // We do the rewire to use the stubbed implementation of the module
-//         findStub = sandbox.stub(mongoose.Model, 'find').resolves(sampleUsers)
-//     })
+    it('should retrieve tasks with a valid token', async () => {
+     await request(app)
+        .get('/tasks')
+        .set('token','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjY1MDA5ZmE1NWY2NjNlNzczYjU2MDM1MyIsInJvbGUiOiJXUklURVIiLCJpYXQiOjE2OTQ3MTkzNjgsImV4cCI6MTY5NDcyMjk2OH0.kmZ7KBJbaENtJGJS17-Ga6DuXt7MWG-RynAJn0XET_w')
+        .expect(200);
 
-//     afterEach(() => {
-//         // We do the rewire to use the original implementation of the module
-//         userServices = rewire('../src/services/user.services')
-//         // We restore the stubbed implementation of the module
-//         sandbox.restore()
-//     })
-
-//     describe('getAllUsers', () => {
-//         it('should return a list with users', async () => {
-//             let res = await userServices.getAllUsers()
-//             expect(res).to.have.lengthOf(1)
-//         })
-//     })
-// })
-
-
-/* 
-  ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ Testing app routes                                                                                              │
-  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
- */
-
-// const expect = require('chai').expect
-// const request = require('supertest')
-// const sandbox = require('sinon').createSandbox()
-// const rewire = require('rewire')
-
-// let { userControllers } = require('../src/controllers')
-// let app = require('../app')
-
-// describe('Test /users endpoint', () => {
-//   let sampleResponse
-
-//     beforeEach(() => {
-//       sampleResponse = [{
-//         name: 'test user',
-//         email: "email@email.com",
-//         role: 'ADMIN',
-//       }]
-
-//       sandbox.stub(userControllers, 'listAllUsers').resolves(sampleResponse);
-//     });
-
-//   afterEach(() => {
-//     app = rewire('../app');
-//     sandbox.restore();
-//   });
-
-//   describe('GET /users', () => {
-//     it('should fail if we do not send the token', async () => {
-//       const res = await request(app).get('/users');
-
-//       expect(res.status).to.equal(500);
-//     });
-//   })
-// })
+      // expect(res.body).to.be.an('array');
+      // expect(res.body.length).to.equal(sampleResponse.length);
+    });
+  });
+});
