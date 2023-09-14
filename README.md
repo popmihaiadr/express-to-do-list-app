@@ -16,14 +16,14 @@ To get started, follow these steps:
 
 1. Start a Docker container for MongoDB using the following command:
 
-```shell
-docker run -d --name mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=<user> -e MONGO_INITDB_ROOT_PASSWORD=<password> mongo  ``` 
+`docker run -d --name mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=<user> -e MONGO_INITDB_ROOT_PASSWORD=<password> mongo`
 
+2. Run the app using  `npm run dev`
 
-After starting the app, you can access the API documentation at:
+3 After starting the app, you can access the API documentation at:
 
-bash
-http://localhost:<PORT>/api-docs/
+`(http://localhost:<PORT>/api-docs/)`
+
 
 Authentication
 All requests to the API require authentication using a JSON Web Token (JWT). The JWT token should be sent in a custom header field, called 'token'. However, this will have to be refactored.
