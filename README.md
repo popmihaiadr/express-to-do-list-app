@@ -1,5 +1,6 @@
 # express-to-do-list-app
 In order to run the app please make sure you start mongodb locally and that the mongodb credentials match the env file
+The command for starting a docker container for MongoDB:
 <code>`docker run -d --name mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=<user> -e
 MONGO_INITDB_ROOT_PASSWORD=<password> mongo`<code>
 
