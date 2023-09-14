@@ -17,7 +17,7 @@ To get started, follow these steps:
 1. Start a Docker container for MongoDB using the following command:
 
 ```shell
-docker run -d --name mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=<user> -e MONGO_INITDB_ROOT_PASSWORD=<password> mongo  '''shell
+docker run -d --name mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=<user> -e MONGO_INITDB_ROOT_PASSWORD=<password> mongo  ``` 
 
 
 After starting the app, you can access the API documentation at:
